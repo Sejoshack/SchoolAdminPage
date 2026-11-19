@@ -1,0 +1,140 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+.login-box {
+    width: 360px;
+    margin: 100px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-box h1 {
+    color: #183153;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button, .btn {
+    display: inline-block;
+    padding: 11px 18px;
+    background: #183153;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+button:hover, .btn:hover {
+    background: #28558b;
+}
+
+.error {
+    color: red;
+}
+
+.sidebar {
+    position: fixed;
+    width: 230px;
+    height: 100%;
+    background: #183153;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar a {
+    display: block;
+    padding: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #28558b;
+}
+
+.main {
+    margin-left: 250px;
+    padding: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card h1 {
+    color: #183153;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #183153;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+@media (max-width: 700px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        margin-left: 0;
+    }
+
+    .login-box {
+        width: 90%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
